@@ -1,0 +1,25 @@
+.menu {
+
+  &__items {
+    .reset-list();
+  }
+
+  &__item {
+    padding-bottom: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    height: 80px;
+    padding-top: 56px;
+
+    &:hover > .title > .guide {
+      animation: guide-move .7s forwards, vanish 3s forwards;
+    }
+
+    &:hover > .title > .title__bgr-text {
+      animation: pulse .7s, flash 1s infinite;
+    }
+  }
+}

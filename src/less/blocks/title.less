@@ -1,0 +1,125 @@
+.title {
+
+  &__main-text {
+    display: block;
+    height: 24px;
+    font-family: "Verdana", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    color: #1a1712;
+    position: absolute;
+    text-decoration: none;
+
+    &:first-letter {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+  }
+
+  &__main-text--about {
+    top: 56px;
+    left: 291px;
+  }
+
+  &__main-text--offers {
+    top: 256px;
+    left: 220px;
+  }
+
+  &__main-text--websites {
+    top: 38px;
+    left: 40px;
+
+    &:first-letter {
+      .portfolio-first-letter();
+    }
+
+    &:hover ~ .title__bgr-text {
+      animation: fade 0.7s;
+    }
+  }
+
+  &__main-text--otherart {
+    bottom: 44px;
+    right: 32px;
+
+    &:first-letter {
+      .portfolio-first-letter();
+    }
+
+    &:hover ~ .title__bgr-text {
+      animation: fade 0.7s;
+    }
+  }
+
+  &__main-text--menu {
+      color: #ffffff;
+
+    &:first-letter {
+      color: #1a1712;
+      margin-right: 5px;
+      margin-left: 41px;
+    }
+  }
+
+  &__bgr-text {
+    position: absolute;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    color: #000000;
+    opacity: 0.05;
+  }
+
+  &__bgr-text--about-m {
+    top: 17px;
+    left: 61px;
+  }
+
+  &__bgr-text--portfolio-m {
+    top: 117px;
+    left: 58px;
+  }
+
+  &__bgr-text--offers-m {
+    top: 217px;
+    left: 59px;
+  }
+
+  &__bgr-text--contact-m {
+    top: 317px;
+    left: 59px;
+  }
+
+  &__bgr-text--about {
+    top: 15px;
+    left: 310px;
+  }
+
+  &__bgr-text--offers {
+    top: 220px;
+    left: 240px;
+    font-size: 44px;
+  }
+
+  &__bgr-text--www {
+    top: 128px;
+    left: 80px;
+  }
+
+  &__bgr-text--covers {
+    bottom: 184px;
+    right: 62px;
+    font-size: 35px;
+  }
+
+  &__bgr-text--logos {
+    bottom: 134px;
+    right: 62px;
+    font-size: 41px;
+  }
+}
